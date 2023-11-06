@@ -3,6 +3,9 @@ package com.example.ikon.entity;
 public class Post {
 
     private Long userId;
+
+
+
     private String title;
 
     public Long getUserId() {
@@ -28,5 +31,13 @@ public class Post {
 
     public Post() {
         // Default constructor
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "userId=" + userId +
+                ", title='" + title + '\'' +
+                '}';
     }
 }
